@@ -1,4 +1,42 @@
-/* .profile {
+.profile {
     width: 230px;
     box-shadow: -5px 5px 15px rgb(190, 26, 26);
-} */
+}
+
+.description {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.description p, .label {
+    margin-bottom: 10px;
+    color: #8C8C8C;
+}
+
+.description .name {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.stats {
+    display: flex;
+    margin-top: 10px;
+}
+.stats li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 70px;
+    border: 1px solid rgb(248, 177, 201);
+    background-color: rgb(255, 232, 244);
+}
