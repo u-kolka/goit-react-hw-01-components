@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from "./Statistics.module.css";
 
 
-export const Statistics = ({ title="Upload stats", stats }) => {
+export const Statistics = ({ title, stats }) => {
     return (
     <section className={css.statistics}>
         <div className={css.stats_box}>
@@ -22,5 +22,10 @@ export const Statistics = ({ title="Upload stats", stats }) => {
 
 Statistics.propTypes = {
     title: PropTypes.string,
-    stats: PropTypes.arrayOf(PropTypes.object),
+    stats: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired,
+    })
+    ),
 }
